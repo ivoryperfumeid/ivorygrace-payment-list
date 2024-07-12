@@ -6,37 +6,41 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Menggunakan tinggi viewport agar konten berada di tengah halaman */
+    height: 100vh;
 }
 
 .container {
-    max-width: 400px; /* Atur lebar container sesuai kebutuhan */
+    max-width: 600px; /* Lebar container disesuaikan agar tabel terlihat lebih baik */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Memusatkan konten di dalam container */
+    text-align: center;
 }
 
 h1 {
     color: #333;
+    font-size: 24px;
+    line-height: 1.5;
 }
 
-.account-list {
-    list-style-type: none;
-    padding: 0;
+.account-table {
+    width: 100%;
+    border-collapse: collapse; /* Menggabungkan batas antar sel */
+    margin-bottom: 20px; /* Jarak antara tabel dan konten lainnya */
 }
 
-.account-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.account-table th, .account-table td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Garis antar sel */
 }
 
-.account-number {
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 10px; /* Jarak antara nomor rekening dan tombol Copy */
+.account-table th {
+    background-color: #f2f2f2; /* Warna latar belakang untuk header tabel */
+}
+
+.account-table td {
+    text-align: left; /* Rata kiri isi sel */
 }
 
 .copy-button {

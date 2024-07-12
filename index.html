@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Daftar Nomor Rekening</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ivory & Grace Payment List</title>
 </head>
 <body>
     <div class="container">
-        <h1>Daftar Nomor Rekening Ivory Perfume</h1>
-        <ul class="account-list">
-            <li>
-                <div class="account-info">
-                    <span class="account-number">1234567890</span>
-                    <button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button>
-                </div>
-            </li>
-            <!-- Tambahkan nomor rekening lainnya sesuai kebutuhan -->
-        </ul>
+        <h1>Ivory & Grace Payment List</h1>
+        <table class="account-table">
+            <thead>
+                <tr>
+                    <th>Nama Bank</th>
+                    <th>Nomor Rekening</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BANK BSI</td>
+                    <td>7190476628</td>
+                    <td><button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button></td>
+                </tr>
+                <tr>
+                    <td>BANK BRI</td>
+                    <td>052901013624508</td>
+                    <td><button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button></td>
+                </tr>
+                <tr>
+                    <td>SHOPEEPAY</td>
+                    <td>0895372115913</td>
+                    <td><button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button></td>
+                </tr>
+                <tr>
+                    <td>DANA</td>
+                    <td>0895372115913</td>
+                    <td><button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button></td>
+                </tr>
+                <tr>
+                    <td>OVO</td>
+                    <td>0895372115913</td>
+                    <td><button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button></td>
+                </tr>
+                <!-- Tambahkan baris lain sesuai kebutuhan -->
+            </tbody>
+        </table>
     </div>
 
     <script>
