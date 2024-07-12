@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Daftar Nomor Rekening</title>
 </head>
 <body>
@@ -11,8 +11,10 @@
         <h1>Daftar Nomor Rekening Ivory Perfume</h1>
         <ul class="account-list">
             <li>
-                <span class="account-number">1234567890</span>
-                <button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button>
+                <div class="account-info">
+                    <span class="account-number">1234567890</span>
+                    <button class="copy-button" onclick="copyToClipboard('1234567890')">Copy</button>
+                </div>
             </li>
             <!-- Tambahkan nomor rekening lainnya sesuai kebutuhan -->
         </ul>
@@ -26,4 +28,3 @@
     </script>
 </body>
 </html>
-

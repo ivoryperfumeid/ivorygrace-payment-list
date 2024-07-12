@@ -1,21 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #75E6DA; /* Ganti latar belakang dengan warna yang diinginkan */
+    background-color: #75E6DA;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Menggunakan tinggi viewport agar konten berada di tengah halaman */
 }
 
 .container {
-    max-width: 800px;
-    margin: 20px auto;
+    max-width: 400px; /* Atur lebar container sesuai kebutuhan */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Memusatkan konten di dalam container */
 }
 
 h1 {
-    text-align: center;
     color: #333;
 }
 
@@ -24,19 +27,16 @@ h1 {
     padding: 0;
 }
 
-.account-list li {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
+.account-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .account-number {
     font-size: 18px;
     font-weight: bold;
+    margin-right: 10px; /* Jarak antara nomor rekening dan tombol Copy */
 }
 
 .copy-button {
