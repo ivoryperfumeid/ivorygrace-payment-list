@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Nomor Rekening</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>List Nomor Rekening</h1>
+        <ul id="rekening-list">
+            <li>
+                <span class="rekening">1234567890</span>
+                <button class="copy-btn" onclick="copyToClipboard('1234567890')">Copy</button>
+            </li>
+            <li>
+                <span class="rekening">0987654321</span>
+                <button class="copy-btn" onclick="copyToClipboard('0987654321')">Copy</button>
+            </li>
+            <!-- Tambahkan item lain sesuai kebutuhan -->
+        </ul>
+    </div>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                alert('Copied to clipboard: ' + text);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
