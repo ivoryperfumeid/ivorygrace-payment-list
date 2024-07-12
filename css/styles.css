@@ -1,52 +1,57 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
     padding: 0;
 }
 
-li {
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.account-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.account-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
 }
 
-.rekening {
-    font-size: 1.2em;
+.account-number {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.copy-btn {
-    background-color: #007bff;
-    color: #fff;
+.copy-button {
+    background-color: #4CAF50;
+    color: white;
     border: none;
     padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.copy-btn:hover {
-    background-color: #0056b3;
+.copy-button:hover {
+    background-color: #45a049;
 }
